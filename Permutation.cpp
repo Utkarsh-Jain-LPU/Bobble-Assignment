@@ -5,7 +5,7 @@ string main_res = "";
 void solve(vector< vector<string> > arr,int n,int i,string str) {
 
     if(i == n) {
-    	::main_res += str+" ";
+    	::main_res += str+", ";
         return;
     }
     vector<string> data = arr[i];
@@ -42,6 +42,7 @@ int main() {
         }
     }
     solve(fields,fields.size(),0,"");
-    cout<<::main_res;
+    int len = (::main_res).length();
+    cout<<(::main_res).substr(0,len-2);
     return 0;
 }
