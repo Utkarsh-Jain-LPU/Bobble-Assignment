@@ -1,0 +1,1 @@
+After compiling, user provide the path of the file and the code returns you the output i.e. all permutations.
